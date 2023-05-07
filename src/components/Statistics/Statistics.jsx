@@ -2,7 +2,10 @@ import PropTypes from 'prop-types';
 import { StatisticsContainer, StatisticsText} from './Statistics.styled.jsx'
 import  Notification  from 'components/Notification/Notification';
 
-export default function Statistics ({ good, neutral, bad, total, positiveFeedback=0}) {
+export default function Statistics({ good, neutral, bad, total, positiveFeedback }) {
+  
+
+
     return total !== 0 ? (
       <StatisticsContainer>
       <StatisticsText>Good: {good}</StatisticsText>
@@ -20,9 +23,9 @@ export default function Statistics ({ good, neutral, bad, total, positiveFeedbac
 };
 
 Statistics.propTypes = {
-   good:PropTypes.number.isRequired,
-          neutral:PropTypes.number.isRequired,
-          bad:PropTypes.number.isRequired,
-          total:PropTypes.number.isRequired,
-          positivePercentage:PropTypes.number.isRequired,
-}
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
+  positiveFeedback: PropTypes.number.isRequired,
+};
